@@ -1,0 +1,55 @@
+.title > #box1 {
+  padding: 10px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/IMG_6603.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#split-screen {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 200px;
+  margin: 50px 50px 50px 50px
+}
+
+.about-images * {
+  grid-column: 1 / 2;
+}
+
+.main-paragraph div {
+  margin-left: 250px;
+  margin-top: -50px;
+}
+
+.main-paragraph .bio {
+  grid-column: 2 / -1;
+}
+
+.main-paragraph .interests {
+  grid-column: 2 / -1;
+}
+
+.main-paragraph .background {
+  grid-column: 2 / -1;
+}
+
+
+.about-images ul {
+  list-style-type: none;
+}
+
+.about-images ul li img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: #bcd9e2 3px solid;
+}
