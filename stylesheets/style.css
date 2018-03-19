@@ -3,8 +3,14 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
+  /* grid-template-rows: repeat(5, 1fr); */
+  /* grid-template-columns: repeat (3, 1fr); */
+  /* grid-template-rows: 40px 40px 40px 40px 40px; */
 }
+
+/* .container section {
+border-bottom: #bcd9e2 1px dotted;
+} */
 
 /* syle for the nav list items */
 .header > #nav {
@@ -31,7 +37,7 @@
 
 /* pseudo selector for nav list */
 .header > #nav ul li a:hover {
-  color: red;
+  color: #bf56bf;
   text-decoration: underline;
 }
 
@@ -43,28 +49,77 @@
 
 
 .title {
-  grid-row: 2 / span 2;
-  position: relative;
   width: 100%;
-  height: 650px;
+  height: 800px;
+  display: flex;
 }
 
-#title > #box1 {
-  height: 100vh;
+.title > #box1 {
+  height: 100%;
   width: 100%;
-  background-image: url(images/IMG_6666.jpg);
+  background-image: url("../images/anthony-delanoix-14741-unsplash.jpg");
   background-size: cover;
-  background-position: fixed;
+  display: table;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
+.title > #box1 h1 {
+  color: #bf56bf;
+  font-size: 60px;
+  font-family: 'Limelight', bold;
+  margin: auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title > #box1 sub {
+  line-height: 70px;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 25px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title > #box1 a {
+  font-size: 1.3em;
+  padding: 20px 30px;
+  margin-bottom: 70px;
+  border: #bcd9e2 3px solid;
+  border-radius: 7px;
+  text-decoration: none;
+  color: #bf56bf;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title >#box1 a:hover {
+  background-color: #bcd9e2;
+}
+
+.main {
+
+}
+
+.contact-footer-nav {
+
+}
 
 #footer {
   background-color: #00316b;
   display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 #footer h6 {
   text-align: center;
-  color: purple;
+  color: #bf56bf;
 }
