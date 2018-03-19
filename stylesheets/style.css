@@ -8,9 +8,9 @@
   /* grid-template-rows: 40px 40px 40px 40px 40px; */
 }
 
-/* .container section {
-border-bottom: #bcd9e2 1px dotted;
-} */
+.container section {
+  border-bottom: #bcd9e2 5px double;
+}
 
 /* syle for the nav list items */
 .header > #nav {
@@ -47,79 +47,117 @@ border-bottom: #bcd9e2 1px dotted;
   padding: 20px;
 }
 
-
 .title {
   width: 100%;
   height: 800px;
-  display: flex;
 }
 
 .title > #box1 {
+  padding: 10px;
+  text-align: center;
   height: 100%;
   width: 100%;
   background-image: url("../images/anthony-delanoix-14741-unsplash.jpg");
   background-size: cover;
-  display: table;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .title > #box1 h1 {
   color: #bf56bf;
   font-size: 60px;
   font-family: 'Limelight', bold;
-  margin: auto;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 25px;
 }
 
 .title > #box1 sub {
   line-height: 70px;
   font-weight: bold;
   font-size: 1.5em;
-  margin-bottom: 25px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 25px;
 }
 
 .title > #box1 a {
   font-size: 1.3em;
   padding: 20px 30px;
-  margin-bottom: 70px;
-  border: #bcd9e2 3px solid;
+  margin: 70px;
+  border: #bcd9e2 4px double;
   border-radius: 7px;
   text-decoration: none;
   color: #bf56bf;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
-.title >#box1 a:hover {
+.title > #box1 a:hover {
   background-color: #bcd9e2;
 }
 
-.main {
-
+.main ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  margin: 50px 50px;
 }
+
+.main ul li .main-image {
+  position: relative;
+  height: 200px;
+  width: 257px;
+  /* z-index: -1; */
+}
+
+.main ul li .main-image img {
+  border-radius: 50%;
+  border: #bcd9e2 3px solid;
+  width: 250px;
+  height: 250px;
+  /* min-width: 20%;
+  margin: 50px 50px 0px 50px; */
+}
+
+.main ul li .main-image .center-image-title {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #F7B26E;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s, visibility 1s;
+}
+
+.main ul li .main-image:hover .center-image-title {
+  visibility: visible;
+  opacity: 1;
+}
+
+
 
 .contact-footer-nav {
 
 }
 
-#footer {
+.footer {
   background-color: #00316b;
   display: inline-block;
   display: flex;
   justify-content: center;
 }
 
-#footer h6 {
+.footer h6 {
   text-align: center;
   color: #bf56bf;
 }
