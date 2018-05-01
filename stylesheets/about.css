@@ -46,6 +46,7 @@ margin-bottom: 25px;
 
 .about-images ul {
   list-style-type: none;
+  padding-bottom: 50px;
 }
 
 .about-images ul li img {

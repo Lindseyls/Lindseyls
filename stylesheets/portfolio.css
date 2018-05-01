@@ -33,6 +33,7 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
+  padding-bottom: 50px;
 }
 
 .main-images ul li span {
